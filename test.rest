@@ -1,0 +1,25 @@
+POST http://localhost:3000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "name": "eric",
+    "email": "ericsun07@gmail.com",
+    "password": "secret"
+}
+
+###
+
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "ericsun07@gmail.com",
+    "password": "secret"
+}
+
+###
+
+POST http://localhost:3000/api/v1/jobs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmY5YTliMzFkZGYxZGM0NzIxZWExNDYiLCJuYW1lIjoiZXJpYyIsImlhdCI6MTY2MDUyOTA3NSwiZXhwIjoxNjYzMTIxMDc1fQ.G70nV2x3S1z8U4-YURckpcEDmZmyUysJmW7C5JtATlI
+
+
