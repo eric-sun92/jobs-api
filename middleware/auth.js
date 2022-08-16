@@ -1,6 +1,6 @@
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const { NotAuthenticatedError } = require("../errors");
+const { NotAuthenticatedError, BadRequestError } = require("../errors");
 
 const authenticate = async (req, res, next) => {
   const authHeader = req.headers["authorization"];

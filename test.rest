@@ -19,7 +19,38 @@ Content-Type: application/json
 
 ###
 
+
 POST http://localhost:3000/api/v1/jobs
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmY5YTliMzFkZGYxZGM0NzIxZWExNDYiLCJuYW1lIjoiZXJpYyIsImlhdCI6MTY2MDUyOTA3NSwiZXhwIjoxNjYzMTIxMDc1fQ.G70nV2x3S1z8U4-YURckpcEDmZmyUysJmW7C5JtATlI
+Content-Type: application/json
 
+{
+    "company": "apple",
+    "position": "frontend developer"
+}
 
+###
+
+GET http://localhost:3000/api/v1/jobs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmY5YTliMzFkZGYxZGM0NzIxZWExNDYiLCJuYW1lIjoiZXJpYyIsImlhdCI6MTY2MDUyOTA3NSwiZXhwIjoxNjYzMTIxMDc1fQ.G70nV2x3S1z8U4-YURckpcEDmZmyUysJmW7C5JtATlI
+
+###
+
+GET http://localhost:3000/api/v1/jobs/62fa93b33eec7c35628f67bf333
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmY5YTliMzFkZGYxZGM0NzIxZWExNDYiLCJuYW1lIjoiZXJpYyIsImlhdCI6MTY2MDUyOTA3NSwiZXhwIjoxNjYzMTIxMDc1fQ.G70nV2x3S1z8U4-YURckpcEDmZmyUysJmW7C5JtATlI
+
+###
+
+DELETE http://localhost:3000/api/v1/jobs/62fa93b33eec7c35628f67bf
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmY5YTliMzFkZGYxZGM0NzIxZWExNDYiLCJuYW1lIjoiZXJpYyIsImlhdCI6MTY2MDUyOTA3NSwiZXhwIjoxNjYzMTIxMDc1fQ.G70nV2x3S1z8U4-YURckpcEDmZmyUysJmW7C5JtATlI
+
+###
+
+PATCH http://localhost:3000/api/v1/jobs/62fa93b33eec7c35628f67bf
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmY5YTliMzFkZGYxZGM0NzIxZWExNDYiLCJuYW1lIjoiZXJpYyIsImlhdCI6MTY2MDUyOTA3NSwiZXhwIjoxNjYzMTIxMDc1fQ.G70nV2x3S1z8U4-YURckpcEDmZmyUysJmW7C5JtATlI
+Content-Type: application/json
+
+{
+    "company": "Microsoft",
+    "position": "react"
+}
